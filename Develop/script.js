@@ -1,12 +1,10 @@
-// Assignment code here
-function getRandomLower() {
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
-}
+var resultEl = document.getElementById("result")
 
-function getRandomUpper() {
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
-}
-console.log(getRandomUpper());
+// Assignment code here
+var getRandomUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+var getRandomLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -19,6 +17,12 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
+function generatePassword() {
+  return
+}
+
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
