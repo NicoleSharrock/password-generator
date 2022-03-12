@@ -12,8 +12,8 @@ const maxLength = 128
 
 function generatePassword() {
   var results = "";
-  var numberOfCharacters = window.prompt("How many characters would you like your password to contain?");
-  var maxLength = parseInt(numberOfCharacters);
+  var characterCount = window.prompt("How many characters would you like your password to contain?");
+  var maxLength = parseInt(characterCount);
 
   if (maxLength > 7 && maxLength < 129) {
 
@@ -25,10 +25,14 @@ function generatePassword() {
     var lower = window.confirm("Click OK to confirm including uppercase characters");
 
     var upper = window.confirm("Click OK to confirm including lowercase characters");
+
   } else {
     window.alert("Invaild entry. Please input a length between 8 and 128");
-    return !generatePassword;
+    return generatePassword();
   }
+  // if (they dont want a symbol, number, lower, upper){
+  //   window.alert("use 1 variabe")
+  // }
 
   var pool = [];
 
