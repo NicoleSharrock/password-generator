@@ -25,4 +25,5 @@ SO THAT I can create a strong password that provides greater security
 https://nicolesharrock.github.io/password-generator/
 
 ## Screenshot 
-![screenshot](develop/screencapture.png)
+![screenshot](./develop/screencapture.png)
+<img scr="develop/screencapture.png">
