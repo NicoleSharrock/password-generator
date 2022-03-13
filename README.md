@@ -25,4 +25,4 @@ SO THAT I can create a strong password that provides greater security
 https://nicolesharrock.github.io/password-generator/
 
 ## Screenshot 
-![](./develop/screencapture.png)
+![screenshot](develop/screencapture.png)
