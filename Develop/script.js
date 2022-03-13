@@ -1,7 +1,12 @@
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-
+// const randomFunc = {
+//   upper: getRandomUpper,
+//   lower: getRandomLower,
+//   number: getRandomNumber,
+//   symbol: getRandomSymbol
+// }
 // Assignment code here
 const getRandomUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 const getRandomLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -30,9 +35,6 @@ function generatePassword() {
     window.alert("Invaild entry. Please input a length between 8 and 128");
     return generatePassword();
   }
-  // if (they dont want a symbol, number, lower, upper){
-  //   window.alert("use 1 variabe")
-  // }
 
   var pool = [];
 
@@ -41,7 +43,7 @@ function generatePassword() {
   if (lower == true) pool.push(...getRandomLower);
   if (upper == true) pool.push(...getRandomUpper)
 
-  if (getRandomSymbol || getRandomNumber || getRandomLower || getRandomUpper) {
+  if (symbol || number || lower || upper) {
     for (var i = 0; i < maxLength; i++) {
       results += pool[Math.floor(Math.random() * pool.length)];
     }
