@@ -26,4 +26,3 @@ https://nicolesharrock.github.io/password-generator/
 
 ## Screenshot 
 ![screenshot](./develop/screencapture.png)
-<img scr="develop/screencapture.png">
